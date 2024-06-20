@@ -1,0 +1,31 @@
+<resources>
+    <color name="seed">#31A660</color>
+    <color name="error">#EC374C</color>
+    <color name="win">#31A660</color>
+    <color name="lose">#EC374C</color>
+
+    <!-- Light Theme -->
+    <color name="light_primary">#6200EE</color>
+    <color name="light_on_primary">#FFFFFF</color>
+    <color name="light_primary_variant">#3700B3</color>
+    <color name="light_secondary">#03DAC5</color>
+    <color name="light_on_secondary">#000000</color>
+    <color name="light_background">#FFFFFF</color>
+    <color name="light_on_background">#121212</color>
+    <color name="light_surface">#FFFFFF</color>
+    <color name="light_on_surface">#121212</color>
+
+
+    <!-- Dark Theme colors -->
+    <color name="dark_primary">#BB86FC</color>
+    <color name="dark_on_primary">#000000</color>
+    <color name="dark_primary_variant">#3700B3</color>
+    <color name="dark_secondary">#03DAC5</color>
+    <color name="dark_on_secondary">#000000</color>
+    <color name="dark_background">#121212</color>
+    <color name="dark_on_background">#FFFFFF</color>
+    <color name="dark_surface">#121212</color>
+    <color name="dark_on_surface">#FFFFFF</color>
+
+
+</resources>

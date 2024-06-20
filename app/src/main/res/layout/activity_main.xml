@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/scissorsBtn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="48dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/scissors"
+        android:foreground="@drawable/janken_choki"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rockBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/janken_choki" />
+
+    <ImageButton
+        android:id="@+id/rockBtn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/rock"
+        android:foreground="@drawable/janken_gu"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/scissorsBtn"
+        app:layout_constraintEnd_toStartOf="@+id/paperBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/scissorsBtn"
+        app:layout_constraintTop_toTopOf="@+id/scissorsBtn"
+        app:srcCompat="@drawable/janken_gu" />
+
+    <ImageButton
+        android:id="@+id/paperBtn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/paper"
+        android:foreground="@drawable/janken_pa"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/rockBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rockBtn"
+        app:layout_constraintTop_toTopOf="@+id/rockBtn"
+        app:srcCompat="@drawable/janken_pa" />
+
+    <ImageView
+        android:id="@+id/rival"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="128dp"
+        android:contentDescription="@string/rival"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="128dp"
+        android:contentDescription="@string/rival"
+        app:layout_constraintBottom_toTopOf="@+id/rockBtn"
+        app:layout_constraintEnd_toEndOf="@+id/result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/result"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/initText"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/user"
+        app:layout_constraintEnd_toEndOf="@+id/rival"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/rival"
+        app:layout_constraintTop_toBottomOf="@+id/rival" />
+
+    <TextView
+        android:id="@+id/countLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/count_label"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
